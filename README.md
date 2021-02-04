@@ -206,6 +206,20 @@ function App() {
 }
 ```
 
+### jsx2
+
+```js
+plugins: [
+  [
+    '@babel/plugin-transform-react-jsx',
+    {
+      runtime: 'automatic',
+      importSource: 'fre',
+    },
+  ],
+]
+```
+
 ### Compare with other frameworks
 
 The comparison is difficult because the roadmap and trade-offs of each framework are different, but we have to do so.
@@ -232,3 +246,7 @@ The reconciliation algorithm of fre is similar to vue, but the biggest differenc
 #### License
 
 MIT @yisar
+
+```
+
+```

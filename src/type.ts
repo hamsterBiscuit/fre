@@ -51,10 +51,11 @@ export interface IFiber<P extends Attributes = any> {
   ref: IRef
   hooks: IHook
   lastProps: P
-  insertPoint: IFiber | null,
+  after: IFiber | null
   props: P
-  tag: number,
-  time:number
+  tag: number
+  time: number
+  next: IFiber
 }
 
 export type HTMLElementEx = HTMLElement & { last: IFiber | null }
